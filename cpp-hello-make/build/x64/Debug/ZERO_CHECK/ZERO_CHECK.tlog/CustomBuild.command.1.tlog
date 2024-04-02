@@ -1,0 +1,10 @@
+^C:\USERS\NAYTA\DESKTOP\DEVELOPFILE\CPP-HELLO-MAKE\BUILD\CMAKEFILES\B491CD03829C14E77061F97EAF6D4915\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nayta/Desktop/developfile/cpp-hello-make -BC:/Users/nayta/Desktop/developfile/cpp-hello-make/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/nayta/Desktop/developfile/cpp-hello-make/build/HelloWorld.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
